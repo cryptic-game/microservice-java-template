@@ -3,9 +3,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>net.cryptic_game</groupId>
+	<groupId>net.cryptic_game.microservice</groupId>
 	<artifactId>template</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>cryptic-game-TEMPLATE</name>
@@ -20,7 +20,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>net.cryptic_game.template.App</mainClass>
+							<mainClass>net.cryptic_game.microservice.template.App</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>

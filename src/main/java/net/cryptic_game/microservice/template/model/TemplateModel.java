@@ -1,4 +1,4 @@
-package net.cryptic_game.template.model;
+package net.cryptic_game.microservice.template.model;
 
 import java.util.UUID;
 

@@ -5,7 +5,7 @@ A template for new java microservices
 
 - pom.xml
 - Dockerfile (if needed)
-- logical the java code
+- logically the java code
 
 Replace `template` with the microservice name.
 
