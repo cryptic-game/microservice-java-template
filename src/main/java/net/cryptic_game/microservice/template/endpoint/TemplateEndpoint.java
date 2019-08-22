@@ -1,16 +1,15 @@
 package net.cryptic_game.microservice.template.endpoint;
 
-import java.util.UUID;
-
+import net.cryptic_game.microservice.endpoint.UserEndpoint;
 import org.json.simple.JSONObject;
 
-import net.cryptic_game.microservice.endpoint.UserEndpoint;
+import java.util.UUID;
 
 public class TemplateEndpoint {
 
-	@UserEndpoint(path = { "echo" },keys = { "message" }, types = { String.class })
-	public static JSONObject echo(JSONObject data, UUID user) {
-		return data;
-	}
+    @UserEndpoint(path = {"echo"}, keys = {"message"}, types = {String.class})
+    public static JSONObject echo(JSONObject data, UUID user) {
+        return data;
+    }
 
 }

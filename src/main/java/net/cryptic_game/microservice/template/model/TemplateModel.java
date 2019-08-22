@@ -12,48 +12,48 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "template")
 public class TemplateModel extends Model {
-	
-	public TemplateModel() {
-		//TODO
-	}
-	
-	public void update() {
-		Session session = Database.getInstance().openSession();
-		session.beginTransaction();
 
-		//TODO
+    public TemplateModel() {
+        //TODO
+    }
 
-		session.update(this);
+    public void update() {
+        Session session = Database.getInstance().openSession();
+        session.beginTransaction();
 
-		session.getTransaction().commit();
-		session.close();
-	}
-	
-	public static TemplateModel get(UUID uuid) {
-		Session session = Database.getInstance().openSession();
-		session.beginTransaction();
+        //TODO
 
-		TemplateModel model = session.get(TemplateModel.class, uuid);
+        session.update(this);
 
-		session.getTransaction().commit();
-		session.close();
+        session.getTransaction().commit();
+        session.close();
+    }
 
-		return model;
-	}
-	
-	public static TemplateModel create() {
-		Session session = Database.getInstance().openSession();
-		session.beginTransaction();
+    public static TemplateModel get(UUID uuid) {
+        Session session = Database.getInstance().openSession();
+        session.beginTransaction();
 
-		TemplateModel model = new TemplateModel();
+        TemplateModel model = session.get(TemplateModel.class, uuid);
 
-		//TODO
+        session.getTransaction().commit();
+        session.close();
 
-		session.save(model);
+        return model;
+    }
 
-		session.getTransaction().commit();
-		session.close();
-		return null;
-	}
+    public static TemplateModel create() {
+        Session session = Database.getInstance().openSession();
+        session.beginTransaction();
+
+        TemplateModel model = new TemplateModel();
+
+        //TODO
+
+        session.save(model);
+
+        session.getTransaction().commit();
+        session.close();
+        return null;
+    }
 
 }
